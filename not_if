@@ -1,0 +1,19 @@
+#!/bin/sh
+
+i=3
+
+if [ ! "$i" -eq 5 ]; then
+  echo 'i is not 5'
+fi
+
+if
+  test "$i" -eq 5
+  [ $? -ne 0 ]
+then
+  echo 'i is not 5'
+fi
+
+if who | grep '^masakazu' > /dev/null
+then
+  echo 'masakazu is logged in'
+fi

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+i=5
+
+if [ "$i" -eq 3 ]; then
+  echo 'i is 3'
+elif [ "$i" -eq 5 ]; then
+  echo 'i is 5'
+else
+  echo 'i maybe 6'
+fi

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+i=3
+j=5
+
+if [ "$i" -eq 3 ]; then
+  if [ "$j" -eq 5 ]; then
+    echo 'i is 3 and j is 5'
+  fi
+fi
