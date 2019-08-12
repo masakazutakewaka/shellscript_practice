@@ -1,0 +1,7 @@
+#!/bin/sh
+
+for ((sum=0, i = 0; i < 100; i++)) {
+  ((sum += i))
+}
+
+echo $sum
