@@ -1,0 +1,10 @@
+#!/bin/bash
+
+case `uname` in
+  Darwin)
+    echo 'darwin'
+  ;;
+  *)
+    echo 'not darwin'
+  ;;
+esac

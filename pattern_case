@@ -1,0 +1,13 @@
+#!/bin/sh
+
+case $1 in
+  [a-z])
+    echo 'a charactor in a - z'
+  ;;
+  ?)
+    echo 'any charactor'
+  ;;
+  file*)
+    echo 'matches to file'
+  ;;
+esac
