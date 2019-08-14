@@ -1,0 +1,22 @@
+#!/bin/sh
+
+PS3='command'
+
+select cmd in left up right down quit
+do
+  case $cmd in
+    up)
+      echo 'going up';;
+    down)
+      echo 'going down';;
+    left)
+      echo 'going left';;
+    right)
+      echo 'going right';;
+    quit)
+      echo 'quitting'
+      break;;
+    *)
+      echo "unrecognizable command: $REPLY";;
+  esac
+done
