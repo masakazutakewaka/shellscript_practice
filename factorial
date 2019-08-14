@@ -1,0 +1,15 @@
+#!/bin/sh
+
+factorial()
+{
+  if [ "$1" -le 1 ]; then
+    echo 1
+    return
+  fi
+
+  i=`expr "$1" - 1`
+  n=`factorial "$i"`
+  expr "$1" \* "$n"
+}
+
+factorial "$1"
